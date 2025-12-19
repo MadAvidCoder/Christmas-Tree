@@ -32,4 +32,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     star.addEventListener('click', changeStar);
+
+    document.getElementById("tree").addEventListener("click", () => {
+        alert("🎄 Happy Haxmas! 🎄");
+        if(month === 12){
+            let daysTilChristmas = Math.max(25-days,0);
+            decorations.innerHTML = ``
+
+            for(let i = 0; i < daysTilChristmas; i++){
+                const randomImg= ornamentImg[Math.floor(Math.random()*18)]
+                decorations.innerHTML += `<img src="img/ornaments/${randomImg}" class="ornament" id="ornament${i}">`;
+                const ornament = document.getElementById("ornament"+i);
+                ornament.style.width = (Math.random() * 1.7 + 1) + "rem";
+                ornament.style.left = (Math.random() * 40 + 30) + "%"
+                ornament.style.top = (Math.random() * 10 + 6) + "rem"
+            }
+        }
+    });
 });
