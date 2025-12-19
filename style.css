@@ -59,7 +59,16 @@ body {
     z-index: 10;
     position: absolute;
     top: 15rem;
+    animation: glow 3s infinite alternate;
 }
+
+@keyframes glow {
+    0%   { filter: drop-shadow(0 0 4px red); }
+    30%   { filter: drop-shadow(0 0 4px magenta); }
+    50%  { filter: drop-shadow(0 0 6px gold); }
+    100% { filter: drop-shadow(0 0 4px cyan); }
+}
+
 
 #tree-container {
     position: relative;
