@@ -4,7 +4,7 @@ const month = date.getMonth() + 1;
 const year = date.getFullYear();
 
 const ornamentImg = ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png","12.png","13.png","14.webp", "15.png","16.webp", "17.webp", "18.png"];
-const stars = ["⭐", "🛠️", "💫", "💖", "🎄", "🏴‍☠️", "🚀", "🔌"];
+const stars = ["⭐", "🛠️", "💫", "💖", "🎄", "😸️", "🚀", "🔌"];
 
 
 function changeStar(){
